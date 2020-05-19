@@ -69,7 +69,7 @@ services:
       - redis-node3
   redis-cluster-creator:
     image: redis:6.0.3
-    entrypoint: [/bin/sh,-c,'echo "yes" | redis-cli -a pass.123     --cluster create ${ip}:7000 ${ip}:7001 ${ip}:7002 ${ip}    :7003 ${ip}:7004 ${ip}:7005 --cluster-replicas 1']
+    entrypoint: [/bin/sh,-c,'echo "yes" | redis-cli -a pass.123 --cluster create ${ip}:7000 ${ip}:7001 ${ip}:7002 ${ip}:7003 ${ip}:7004 ${ip}:7005 --cluster-replicas 1']
     depends_on:
       - redis-node1
       - redis-node2
