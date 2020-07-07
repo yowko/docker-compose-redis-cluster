@@ -4,7 +4,6 @@ services:
   redis-node1:
     build:
       context: redis
-      network: host
     ports:
       - "7000:7000"
       - "17000:17000"
@@ -13,7 +12,6 @@ services:
   redis-node2:
     build:
       context: redis
-      network: host
     ports:
       - "7001:7001"
       - "17001:17001"
@@ -22,7 +20,6 @@ services:
   redis-node3:
     build:
       context: redis
-      network: host
     ports:
       - "7002:7002"
       - "17002:17002"
@@ -31,7 +28,6 @@ services:
   redis-node4:
     build:
       context: redis
-      network: host
     ports:
       - "7003:7003"
       - "17003:17003"
@@ -44,7 +40,6 @@ services:
   redis-node5:
     build:
       context: redis
-      network: host
     ports:
       - "7004:7004"
       - "17004:17004"
@@ -57,7 +52,6 @@ services:
   redis-node6:
     build:
       context: redis
-      network: host
     ports:
       - "7005:7005"
       - "17005:17005"
