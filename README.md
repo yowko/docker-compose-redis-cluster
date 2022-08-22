@@ -5,3 +5,8 @@
 ```bash
 ip=$(ipconfig getifaddr en0) docker-compose up -d --build
 ```
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
